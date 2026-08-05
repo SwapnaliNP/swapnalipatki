@@ -5,7 +5,7 @@ url: "https://swapnalinp.github.io/swapnalipatki"
 # THEME-SPECIFIC CONFIGURATION
 title: Swapnali Patki                                    # site's title
 description: "Swapnali Patki's Personal Portfolio"      # used by search engines
-avatar: assets/img/Profile_Picture.png                         # Empty for no avatar in navbar
+avatar: assets/img/Profile_Picture.jpg                        # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
