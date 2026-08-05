@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swapnali Patki — About</title>
+<meta name="description" content="Data Scientist / Machine Learning Engineer — Swapnali Patki">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #EEF1EF;
+    --bg-grid: #E2E7E4;
+    --ink: #16211D;
+    --ink-soft: #4B5751;
+    --paper: #FBFCFA;
+    --line: #D6DCD8;
+    --signal: #3E6659;      /* deep pine — primary accent */
+    --signal-bright:#5B9C86;
+    --tag-bg: #E4EEE9;
+    --tag-ink: #2E5648;
+    --amber: #C08A3E;       /* used once, for the award highlight */
+    --radius: 14px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:
+      linear-gradient(var(--bg-grid) 1px, transparent 1px) 0 0/100% 44px,
+      linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px) 0 0/44px 100%,
+      var(--bg);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{max-width:820px;margin:0 auto;padding:0 28px 120px;}
+
+  /* ---------- HERO ---------- */
+  header.hero{
+    max-width:820px;margin:0 auto;padding:64px 28px 40px;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--signal);
+    margin:0 0 18px;
+  }
+  h1.name{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:clamp(38px, 6vw, 58px);
+    line-height:1.05;
+    margin:0 0 14px;
+    letter-spacing:-0.01em;
+  }
+  .tagline{
+    font-size:19px;
+    color:var(--ink-soft);
+    max-width:600px;
+    margin:0 0 22px;
+  }
+  .contact-row{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 14px;
+    margin-bottom:30px;
+  }
+  .contact-row a{color:var(--signal);text-decoration:none;border-bottom:1px solid transparent;}
+  .contact-row a:hover{border-color:var(--signal);}
+  .contact-row span.sep{color:var(--line);}
+
+  nav.jump{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    border-top:1px solid var(--line);
+    padding-top:22px;
+  }
+  nav.jump a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    text-decoration:none;
+    color:var(--ink);
+    background:var(--paper);
+    border:1px solid var(--line);
+    padding:7px 13px;
+    border-radius:999px;
+    transition:border-color .15s ease, color .15s ease;
+  }
+  nav.jump a:hover{border-color:var(--signal);color:var(--signal);}
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:52px 0 0;}
+  section:first-of-type{padding-top:8px;}
+  h2.section-title{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--signal);
+    margin:0 0 26px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  h2.section-title::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:var(--line);
+  }
+
+  .summary p{
+    font-size:16.5px;
+    max-width:660px;
+    color:var(--ink);
+  }
+  .summary p + p{color:var(--ink-soft);}
+
+  /* ---------- EXPERIENCE TIMELINE ---------- */
+  .timeline{position:relative;padding-left:28px;}
+  .timeline::before{
+    content:"";
+    position:absolute;
+    left:5px; top:6px; bottom:6px;
+    width:1.5px;
+    background:linear-gradient(var(--signal), var(--line));
+  }
+  .role{position:relative;padding-bottom:38px;}
+  .role:last-child{padding-bottom:0;}
+  .role::before{
+    content:"";
+    position:absolute;
+    left:-28px; top:4px;
+    width:11px; height:11px;
+    border-radius:50%;
+    background:var(--paper);
+    border:2px solid var(--signal);
+  }
+  .role-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px;margin-bottom:2px;}
+  .role-title{font-weight:600;font-size:16.5px;}
+  .role-dates{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    margin-left:auto;
+    white-space:nowrap;
+  }
+  .role-org{
+    font-size:14px;
+    color:var(--signal);
+    margin-bottom:10px;
+  }
+  .role ul{margin:0;padding-left:18px;}
+  .role li{font-size:15px;color:var(--ink);margin-bottom:6px;}
+  .role li b, .role li strong{color:var(--tag-ink);background:var(--tag-bg);padding:1px 6px;border-radius:5px;font-weight:600;}
+
+  /* ---------- EDUCATION ---------- */
+  .edu-grid{display:flex;flex-direction:column;gap:20px;}
+  .edu-card{
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:20px 22px;
+  }
+  .badge{
+    flex:none;
+    width:52px;height:52px;
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .badge svg{width:100%;height:100%;}
+  .edu-school{font-weight:600;font-size:16px;margin-bottom:2px;}
+  .edu-degree{font-size:14.5px;color:var(--ink);}
+  .edu-meta{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    margin-top:6px;
+  }
+
+  /* ---------- SKILLS ---------- */
+  .skill-groups{display:flex;flex-direction:column;gap:22px;}
+  .skill-group-label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    color:var(--ink-soft);
+    margin-bottom:10px;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+  }
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    font-size:13.5px;
+    background:var(--tag-bg);
+    color:var(--tag-ink);
+    padding:6px 12px;
+    border-radius:8px;
+    font-family:'IBM Plex Mono', monospace;
+  }
+
+  /* ---------- PROJECTS ---------- */
+  .project-card{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:22px 24px;
+  }
+  .project-title{font-weight:600;font-size:16.5px;margin-bottom:2px;}
+  .project-org{font-size:13.5px;color:var(--signal);margin-bottom:12px;}
+  .project-card ul{margin:0;padding-left:18px;}
+  .project-card li{font-size:15px;margin-bottom:6px;}
+
+  footer{
+    max-width:820px;margin:0 auto;
+    padding:50px 28px 40px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    color:var(--ink-soft);
+    border-top:1px solid var(--line);
+    margin-top:50px;
+  }
+
+  @media (max-width:600px){
+    header.hero{padding:44px 20px 30px;}
+    .wrap{padding:0 20px 90px;}
+    .role-dates{margin-left:0;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <p class="eyebrow">About</p>
+  <h1 class="name">Swapnali Patki</h1>
+  <p class="tagline">Data Scientist / Machine Learning Engineer building production ML systems across computer vision, LLMs, and applied statistics.</p>
+  <div class="contact-row">
+    <span>Seattle, WA</span>
+    <span class="sep">·</span>
+    <a href="https://www.linkedin.com/in/swapnali-patki/">LinkedIn</a>
+    <span class="sep">·</span>
+    <a href="#">GitHub</a>
+    <span class="sep">·</span>
+    <a href="mailto:snpatki1@gmail.com">snpatki1@gmail.com</a>
+    <span class="sep">·</span>
+    <span>+1 (551) 227-0970</span>
+  </div>
+  <nav class="jump">
+    <a href="#summary">Summary</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+  </nav>
+</header>
+
+<div class="wrap">
+
+  <section id="summary" class="summary">
+    <h2 class="section-title">Summary</h2>
+    <p>I'm a Data Scientist and Machine Learning Engineer with 5+ years of experience turning complex, messy data into systems people can rely on. My work spans computer vision, large language models, and econometrics-informed statistical modeling — always with an eye toward translating technical work into real business and operational decisions.</p>
+    <p>I care about the fundamentals as much as the frontier: clean pipelines, well-validated models, and systems that hold up in production, not just in a notebook.</p>
+  </section>
+
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+
+      <div class="role">
+        <div class="role-head">
+          <span class="role-title">Data Scientist / Machine Learning Engineer</span>
+          <span class="role-dates">Jan 2023 – Jan 2026</span>
+        </div>
+        <div class="role-org">Western EcoSystems Technology Inc, Seattle, WA</div>
+        <ul>
+          <li>Partnering with senior leadership to identify AI opportunities, KPIs, and present data-driven roadmaps.</li>
+          <li>Productionized computer vision systems for classification, detection, and multi-object tracking, improving model integrity by 15-25%.</li>
+          <li>Fine-tuned a CLIP-based transformer for semantic segmentation to support sustained regulatory compliance at wind turbine facilities.</li>
+          <li>Built an end-to-end synthetic data pipeline with Stable Diffusion to simulate rare wildlife classes, boosting minority-class F1 by 20%.</li>
+          <li>Integrated GIS, drone, and field data into a carcass detection workflow supporting deployment of a large-scale solar facility.</li>
+          <li>Delivered a 45% reduction in manual annotation effort through cross-functional automation.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <span class="role-title">Deep Learning Research Assistant</span>
+          <span class="role-dates">Jun 2022 – Dec 2022</span>
+        </div>
+        <div class="role-org">Stevens Institute of Technology, AISec Lab, Hoboken, NJ</div>
+        <ul>
+          <li>Raised suicide-risk sentiment detection F1 from 0.78 to 0.85 across 1M+ social media posts using an end-to-end Flink pipeline with ensembled transformer/traditional models.</li>
+          <li>Built automated data crawling and cleaning pipelines with Beautiful Soup and NLTK for reproducible experimentation.</li>
+          <li>Quantified cascading failure patterns across 10,779 transmission outages and 6,687 cascading events; presented findings at a university research symposium.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <span class="role-title">Software Engineer</span>
+          <span class="role-dates">Jan 2021 – Aug 2021</span>
+        </div>
+        <div class="role-org">L&amp;T Technology Services, Mumbai, India</div>
+        <ul>
+          <li>Supported 100K+ active users under high-throughput workloads by engineering backend systems in Java and optimizing API/SQL performance.</li>
+          <li>Improved website load time by 30% by designing a MySQL database and building full-stack features in .NET, Angular, and React.</li>
+          <li>Cut incident resolution time by 40% by automating production monitoring with Splunk and JIRA.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <span class="role-title">Software Development Engineer</span>
+          <span class="role-dates">Jun 2019 – Dec 2019</span>
+        </div>
+        <div class="role-org">Persistent Systems, Pune, India</div>
+        <ul>
+          <li>Prevented recurring reporting discrepancies of up to $25,000 per batch by resolving a data mismatch between PostgreSQL and Power BI reports.</li>
+          <li>Engineered backend microservices and REST APIs using Node.js, TypeScript, C#, and MySQL, improving query response time by 20%.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-grid">
+
+      <div class="edu-card">
+        <div class="badge">
+          <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="26" cy="26" r="25" fill="#4A5A72"/>
+            <circle cx="26" cy="26" r="25" fill="none" stroke="#E4EEE9" stroke-width="1.4"/>
+            <text x="26" y="31" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#E4EEE9" font-weight="500">WESTCLIFF</text>
+          </svg>
+        </div>
+        <div>
+          <div class="edu-school">Westcliff University</div>
+          <div class="edu-degree">Executive Master of Business Administration, Applied AI in Business — GPA 4.0/4.0</div>
+          <div class="edu-meta">Seattle, WA · Jan 2026 – Present</div>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="badge">
+          <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="26" cy="26" r="25" fill="#2E5648"/>
+            <circle cx="26" cy="26" r="25" fill="none" stroke="#E4EEE9" stroke-width="1.4"/>
+            <text x="26" y="31" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" fill="#E4EEE9" font-weight="500">SIT</text>
+          </svg>
+        </div>
+        <div>
+          <div class="edu-school">Stevens Institute of Technology</div>
+          <div class="edu-degree">Master of Science, Applied Artificial Intelligence — GPA 3.9</div>
+          <div class="edu-meta">Hoboken, NJ · Aug 2021 – Dec 2022</div>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="badge">
+          <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="26" cy="26" r="25" fill="#3E6659"/>
+            <circle cx="26" cy="26" r="25" fill="none" stroke="#E4EEE9" stroke-width="1.4"/>
+            <text x="26" y="31" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#E4EEE9" font-weight="500">SPPU</text>
+          </svg>
+        </div>
+        <div>
+          <div class="edu-school">Savitribai Phule Pune University</div>
+          <div class="edu-degree">Bachelor of Engineering, Information Technology — GPA 7.8</div>
+          <div class="edu-meta">Pune, India · Aug 2016 – May 2020</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skill-groups">
+      <div>
+        <div class="skill-group-label">Languages</div>
+        <div class="chips">
+          <span class="chip">Python</span><span class="chip">C++</span><span class="chip">C#</span>
+          <span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Scala</span>
+          <span class="chip">R</span><span class="chip">Java</span><span class="chip">JavaScript</span>
+          <span class="chip">TypeScript</span><span class="chip">SQL (Snowflake / MySQL / PostgreSQL / NoSQL)</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-group-label">Data Science &amp; ML</div>
+        <div class="chips">
+          <span class="chip">EDA</span><span class="chip">SVM</span><span class="chip">Decision Trees</span>
+          <span class="chip">XGBoost</span><span class="chip">Bayesian Methods</span><span class="chip">RAG</span>
+          <span class="chip">Vector Embeddings</span><span class="chip">LangChain</span><span class="chip">NLP</span>
+          <span class="chip">CLIP</span><span class="chip">YOLO</span><span class="chip">SAM</span>
+          <span class="chip">DINO</span><span class="chip">Llama</span><span class="chip">Time Series (ARIMA)</span>
+          <span class="chip">Statistical Inference</span><span class="chip">A/B Testing</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-group-label">Developer Tools</div>
+        <div class="chips">
+          <span class="chip">Apache Spark</span><span class="chip">Kafka</span><span class="chip">Hadoop</span>
+          <span class="chip">Snowflake</span><span class="chip">Voxel51</span><span class="chip">Docker</span>
+          <span class="chip">Kubernetes</span><span class="chip">MLflow</span><span class="chip">Airflow</span>
+          <span class="chip">Kubeflow</span><span class="chip">Jenkins</span><span class="chip">GitLab CI</span>
+          <span class="chip">ArcGIS</span><span class="chip">AWS (SageMaker / EKS / Lambda / S3 / EC2)</span>
+          <span class="chip">GCP (Vertex AI / BigQuery)</span><span class="chip">Azure ML</span>
+          <span class="chip">Tableau</span><span class="chip">Power BI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>© Swapnali Patki</footer>
+
+</body>
+</html>

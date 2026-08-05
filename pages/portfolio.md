@@ -1,10 +1,10 @@
 --- 
 layout: page
-title : Portfolio 
-permalink: /portfolio/
+title : Projects 
+permalink: /projects/
 subtitle: "Projects I am working on" 
-feature-img: "assets/img/pexels/computer.jpeg"
-position: 4
+feature-img: "assets/img/pexels/projects.jpg"
+position: 2
 tags: [Page]
 ---
 
